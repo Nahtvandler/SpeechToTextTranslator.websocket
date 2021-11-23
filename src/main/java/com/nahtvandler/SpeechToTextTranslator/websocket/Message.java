@@ -15,6 +15,9 @@ public class Message {
     @JsonProperty("channelId")
     String channelId;
 
+    @JsonProperty("isRecognized")
+    boolean isRecognized;
+
     public String getMessage() {
         return message;
     }
@@ -45,5 +48,13 @@ public class Message {
 
     public void setChannelId(String channelId) {
         this.channelId = channelId;
+    }
+
+    public boolean isRecognized() {
+        return isRecognized;
+    }
+
+    public void setRecognized(boolean recognized) {
+        isRecognized = recognized;
     }
 }
